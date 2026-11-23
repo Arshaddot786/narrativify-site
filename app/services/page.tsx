@@ -1,0 +1,4 @@
+import type { Metadata } from 'next';
+import { PageIntro, ServiceCards, CTA } from '@/components/Sections';
+export const metadata:Metadata={title:'Services',description:'Explore Narrativify social growth, conversation intelligence, managed conversation marketing and industry visibility services.',alternates:{canonical:'/services'}};
+export default function Services(){return <main><PageIntro eyebrow="Our services" title="The right work. In the right places." body="Four focused services to help your brand become more visible, more relevant and more connected to the people who matter."/><section className="section container"><ServiceCards/></section><CTA title="Not sure where to begin?" body="Tell us what you want to achieve. We can help you identify the service—or combination—that makes sense."/></main>}
